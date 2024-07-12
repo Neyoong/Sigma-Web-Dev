@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Element selectors */
+      div {
+        background-color: aqua;
+      }
+      /* Class Selectors */
+      .red {
+        background-color: antiquewhite;
+      }
+      /* ID Selectors */
+      #orange{
+        background-color: hotpink;
+      }
+      /* Child selectors */
+div>p{
+    color: blueviolet;
+}
+/* Descendent selectors */
+div p{
+    background-color: powderblue;
+}
+/* Universal Selectors */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Pseudo Selector(used for anchor tags) */
+a:active{
+    color: blue ;
+}
+a:link{
+    color:red;
+}
+a:hover{
+    background-color: black;
+    
+    }
+    a:visited{
+        color: blueviolet;
+    }
+    p:first-child{
+        background-color:red
+        ;
+    
+    }
+
+   
+
+    </style>
+  </head>
+  <body>
+    <div class="red">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae.
+      <article>
+      <p>I am a child</p></article>
+    </div>
+    <div class="op">
+        <p>I am first</p>
+        <p>I am second</p>
+    </div>
+    <div id="orange">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://www.github.com/">GitHub</a>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      .box {
+        background-color: aqua;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box1 {
+        color: azure;
+        padding: 23px;
+        margin: 30px;
+        border: 23px solid rgb(189, 79, 46);
+        height: 100px;
+        /* this property helps in limiting  the total height or width of  content */
+        box-sizing: border-box;
+      }
+      /* Margin collapse means colliding of two margins and forming new margin. The content which has more margin will win and that will be applied.In case ,If two margins are same then only one will be applied */
+      .box2 {
+        color: brown;
+        padding: 23px;
+        margin: 25px;
+        border: 23px solid rgb(189, 79, 46);
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+  </body>
+</html>

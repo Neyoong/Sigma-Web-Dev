@@ -1,0 +1,11 @@
+/* . renders for class */
+.red{
+color: red;
+}
+/* # renders for id */
+#second{
+background-color: blueviolet;
+}
+.bg-yellow{
+background-color: aquamarine
+}
